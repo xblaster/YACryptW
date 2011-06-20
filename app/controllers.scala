@@ -12,12 +12,14 @@ object Application extends Controller {
     def index(code: String = null, encodeBtn: String = null, decodeBtn: String = null) = {
       
       var message: String =""
-      
       if (code!=null) {
         val crypt = new Crypter
-        
-        if (decodeBtn != null) {
-          message = crypt.decrypt(code)
+        println(decodeBtn)
+        if ((decodeBtn != null) && (decodeBtn equals "Decode")) {
+          var newCode = code.toString
+          newCode = newCode.replace("\n", "").trim()
+          println("newCode: "+newCode)
+          message = crypt.decrypt(newCode)
         } else {
           message = crypt.encrypt(code)
         }

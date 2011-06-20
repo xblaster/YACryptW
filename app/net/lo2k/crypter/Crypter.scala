@@ -26,7 +26,6 @@ class Crypter() {
   
 	def decrypt(str: String): String = {
 	  var dec = new sun.misc.BASE64Decoder().decodeBuffer(str);
-	  
 	  new String(dcipher.doFinal(dec),"UTF-8");
 	}
   
