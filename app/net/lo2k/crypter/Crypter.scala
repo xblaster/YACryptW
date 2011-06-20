@@ -73,6 +73,7 @@ class Crypter() {
 
     val q = new Query("Keys")
 
+    try {
     val pq = datastore.prepare(q);
     //var fin: FileInputStream = new FileInputStream(SECRET_KEY_FILENAME)
     val e: Entity = pq.asIterator.next
@@ -89,6 +90,10 @@ class Crypter() {
     ois.readObject match {
       case key: SecretKey => return key
       case _ => throw new Exception("can't unserialize")
+    }
+    } catch {
+      case e:Exception => return null
+      case _  => return null
     }
     null
   }
