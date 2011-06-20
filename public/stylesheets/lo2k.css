@@ -1,0 +1,85 @@
+body, html {
+	background-color: #333;
+}
+
+.container {
+	background-color: #FFF;
+	padding: 3em;
+}
+
+h1 {
+	text-shadow: 1px 1px 5px #BBB;
+}
+
+.accountTab thead {
+	background-color: #333;
+	color: #FFF;
+}
+
+.accountTab {
+	border:1px solid #888;
+}
+
+.accountTab td {
+	border-bottom:1px solid #CCC;
+	border-right:1px solid #CCC;
+}
+
+.operationTag {
+	color: #FFF;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	display: inline;
+}
+
+.alternate {
+	background-color: #F2F2F2;
+}
+
+.operationTag a {
+	color: #FFF;
+}
+
+.fictive {
+	opacity:0.4;
+}
+
+.comment {
+	color: #AAA;
+	font-size: 80%;
+	margin: 0px;
+}
+
+.grey {
+	background-color: #EEE;
+	color: #333;
+}
+
+.black {
+	padding: 3em;
+	color: #FFF;
+	background: -moz-linear-gradient(top, #999, #000);
+	background: -webkit-gradient(linear, center top, center bottom, from(#999999), to(#000000)); 
+}
+
+.black h1 { color: #FFF;}
+.black a{color: #FFF;}
+
+.btn {
+	background: -moz-linear-gradient(top, #DDD, #FFF);
+	border: 1px solid #FFF;
+	background: -webkit-gradient(linear, center top, center bottom, from(#DDDDDD), to(#FFFFFF));
+	padding: 0.5em;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color: #333;
+}
+
+a.btn {
+	color: #666;
+}
+
+
+

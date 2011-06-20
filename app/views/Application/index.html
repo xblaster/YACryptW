@@ -1,4 +1,24 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{welcome /}
+
+<h1>Crypt/Decrypt lo2k site</h1>
+
+#{if message} 
+
+	<h2>Your message</h2>
+	<pre>${message}</pre>
+
+#{/if}
+
+
+#{form @index()}
+
+<textarea name="code">
+
+</textarea>
+<p>
+	<input type="submit" name="EncodeBtn" value="Encode" />
+	<input type="submit" name="DecodeBtn" value="Decode" />
+</p>
+#{/form}
