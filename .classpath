@@ -3,6 +3,7 @@
 	<classpathentry excluding="views/**" kind="src" path="app"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="src" path="scala-0.9"/>
+	<classpathentry kind="src" path="gae-1.4"/>
 	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="D:/play-1.2.1/framework/play-1.2.1.jar"/>
@@ -11,6 +12,21 @@
 	<classpathentry kind="lib" path="D:/play-1.2.1/modules/scala-0.9/lib/scala-compiler.jar"/>
 	<classpathentry kind="lib" path="D:/play-1.2.1/modules/scala-0.9/lib/scala-library.jar"/>
 	<classpathentry kind="lib" path="D:/play-1.2.1/modules/scala-0.9/lib/scalatest-1.2-for-scala-2.8.0.RC7-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/appengine-api-1.0-sdk-1.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/appengine-api-labs-1.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/appengine-jsr107cache-1.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/appengine-tools-api.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/geronimo-jta_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/jsr107cache-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/play-gae.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/provided-appengine-agent.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/provided-appengine-agentimpl.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/provided-appengine-agentruntime.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/provided-appengine-api-labs.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/provided-appengine-api-stubs.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/provided-appengine-api.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/provided-appengine-local-runtime.jar"/>
+	<classpathentry kind="lib" path="D:/play-1.2.1/modules/gae-1.4/lib/provided-appengine-testing.jar"/>
 	<classpathentry kind="lib" path="D:/play-1.2.1/framework/lib/activation-1.1.1.jar"/>
 	<classpathentry kind="lib" path="D:/play-1.2.1/framework/lib/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="D:/play-1.2.1/framework/lib/asm-all-3.3.1.jar"/>

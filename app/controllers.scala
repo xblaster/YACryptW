@@ -4,6 +4,7 @@ import play._
 import play.mvc._
 import net.lo2k.crypter.Crypter
 import play.mvc.results.Template
+import net.lo2k.crypter.FileCrypter
 
 object Application extends Controller {
     
@@ -14,11 +15,9 @@ object Application extends Controller {
       var message: String =""
       if (code!=null) {
         val crypt = new Crypter
-        println(decodeBtn)
         if ((decodeBtn != null) && (decodeBtn equals "Decode")) {
           var newCode = code.toString
           newCode = newCode.replace("\n", "").trim()
-          println("newCode: "+newCode)
           message = crypt.decrypt(newCode)
         } else {
           message = crypt.encrypt(code)
