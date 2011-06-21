@@ -2,23 +2,31 @@
 #{set title:'Home' /}
 
 
-<h1>Crypt/Decrypt lo2k site</h1>
+<h1>Yet Another [De]Crypt Website</h1>
 
 #{if message} 
 
 	<h2>Your message</h2>
-	<pre>${message}</pre>
+	<pre id="messageDiv">${message}</pre>
 
+	<!--<div><a href="#" id="copyLink">Copy to clipboard</a></div>-->
+	<script>
+		/*$(document).ready(function() {
+                    $("#copyLink").bind( 'click', function() {
+                    	var f = $('div#messageDiv').html()
+                        $.copy(f);
+                        return false;
+                    });
+                });*/
+	</script>
 #{/if}
 
 
-#{form @index()}
+#{form @index(), method:'post'}
 
-<textarea name="code">
-
-</textarea>
+<textarea style="width:100%" name="code"></textarea>
 <p>
-	<input type="submit" name="encodeBtn" value="Encode" />
-	<input type="submit" name="decodeBtn" value="Decode" />
+	<input type="submit" name="encodeBtn" value="Encode" class="bigBtn"/>
+	<input type="submit" name="decodeBtn" value="Decode" class="bigBtn"/>
 </p>
 #{/form}
